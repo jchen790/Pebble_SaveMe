@@ -1,0 +1,21 @@
+{
+    "author": "jchen790@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "helloc",
+    "pebble": {
+        "displayName": "helloC",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "uuid": "600bfab4-6a76-4006-ac55-09f26cd89cff",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
