@@ -1,8 +1,8 @@
 #include <pebble.h>
 
-#define KEY_BUTTON  0
-#define KEY_VIBRATE  1
-#define BUTTON_UP  0
+#define KEY_BUTTON    0
+#define KEY_VIBRATE   1
+#define BUTTON_UP    0
 #define BUTTON_SELECT   1
 #define BUTTON_DOWN   2
 
@@ -55,22 +55,22 @@ static void outbox_sent_handler(DictionaryIterator *iterator, void *context)
 
 static void select_click_handler(ClickRecognizerRef recognizer, void *context)
 {
-  text_layer_set_text(s_text_layer, "select");
   send(KEY_BUTTON, BUTTON_SELECT);
+  text_layer_set_text(s_text_layer, "select");
   printf("select");
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context)
 {
-  text_layer_set_text(s_text_layer, "up");
   send(KEY_BUTTON, BUTTON_UP);
+  text_layer_set_text(s_text_layer, "up");
   printf("up");
 }
 
 static void down_click_handler(ClickRecognizerRef recognizer, void *context)
 {
-  text_layer_set_text(s_text_layer, "down");
   send(KEY_BUTTON, BUTTON_DOWN);
+  text_layer_set_text(s_text_layer, "down");
   printf("down");
 }
 
@@ -88,7 +88,7 @@ static void main_window_load(Window *window)
   
   s_text_layer = text_layer_create(bounds);
   text_layer_set_font(s_text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
-  text_layer_set_text(s_text_layer, "open android app and press any button");
+  text_layer_set_text(s_text_layer, "wassup");
   text_layer_set_text_alignment(s_text_layer, GTextAlignmentCenter);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_text_layer));
   #ifdef PBL_ROUND
